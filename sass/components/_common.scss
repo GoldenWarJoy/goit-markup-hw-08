@@ -1,0 +1,59 @@
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: getColor("primary-text");
+  margin: 0 auto;
+  background: getColor("background");
+}
+
+.container {
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  width: 100vw;
+
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  background-color: aqua;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    background-color: red;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .container {
+    background-color: yellow;
+  }
+}
+
+.container--flex-start-row {
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+
+  list-style-type: none;
+  padding: 0;
+}
