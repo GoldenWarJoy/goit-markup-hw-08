@@ -1,0 +1,46 @@
+.our-clients {
+  &__header {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+
+  &__table {
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 170px;
+    height: 92px;
+    fill: getColor("social-links");
+    border: 1px solid getColor("social-links");
+    background: getColor("our-team-member-background");
+    border-radius: 4px;
+    transition-property: border-color fill;
+    transition-duration: 250ms;
+    @media screen and (max-width: 768px) {
+      width: 226px;
+      height: 92px;
+    }
+  }
+  &__link:focus > &__icon,
+  &__link:hover > &__icon {
+    fill: getColor("primary");
+    border-color: getColor("primary");
+    outline: none;
+  }
+}

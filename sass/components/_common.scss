@@ -17,14 +17,31 @@ body {
 
   flex-direction: column;
   align-items: center;
-  margin: auto;
+  margin: 0 20px;
 }
 
 .container--card-set {
-  width: 100%;
   text-align: center;
+  @media screen and (max-width: 1200px) {
+    width: 768px;
+  }
 }
 
+.container--our-team {
+  width: 100%;
+
+  @media screen and (max-width: 1200px) {
+    width: 768px;
+  }
+}
+
+.container--our-clients {
+  width: 100%;
+
+  @media screen and (max-width: 1200px) {
+    width: 768px;
+  }
+}
 // @media screen and (max-width: 768px) {
 //   .container {
 //     background-color: red;

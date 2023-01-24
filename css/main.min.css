@@ -23,12 +23,34 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: auto;
+  margin: 0 20px;
 }
 
 .container--card-set {
-  width: 100%;
   text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  .container--card-set {
+    width: 768px;
+  }
+}
+
+.container--our-team {
+  width: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .container--our-team {
+    width: 768px;
+  }
+}
+
+.container--our-clients {
+  width: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .container--our-clients {
+    width: 768px;
+  }
 }
 
 .container--flex-start-row {
@@ -351,7 +373,7 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px;
+  gap: 25px;
   padding: 0;
   list-style: none;
 }
@@ -362,7 +384,6 @@ body {
 @media screen and (max-width: 1200px) {
   .card-set__item {
     width: 354px;
-    margin: 0;
   }
 }
 .card-set__icon {
@@ -617,4 +638,60 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
   margin: 0 0 10px 0;
+}
+
+.our-clients__header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.our-clients__table {
+  margin: 50px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.our-clients__item {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.our-clients__icon {
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  background: #fff;
+  border-radius: 4px;
+  -webkit-transition-property: border-color fill;
+  transition-property: border-color fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+}
+@media screen and (max-width: 768px) {
+  .our-clients__icon {
+    width: 226px;
+    height: 92px;
+  }
+}
+.our-clients__link:focus > .our-clients__icon, .our-clients__link:hover > .our-clients__icon {
+  fill: #2196f3;
+  border-color: #2196f3;
+  outline: none;
 }/*# sourceMappingURL=main.min.css.map */
