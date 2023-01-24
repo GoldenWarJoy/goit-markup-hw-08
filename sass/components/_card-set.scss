@@ -1,0 +1,49 @@
+.card-set {
+  margin: 0;
+  display: flex;
+
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 auto 94px auto;
+  list-style: none;
+
+  &__item {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    flex-basis: calc((100% - 90px) / 4);
+    @media screen and (max-width: 1200px) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+  }
+
+  &__icon {
+    width: 270px;
+    height: 120px;
+    @media screen and (max-width: 1200px) {
+      width: 354px;
+      background-color: getColor(main-div-our-team-background);
+    }
+  }
+
+  &__header {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    @media screen and (max-width: 1200px) {
+      width: 354px;
+    }
+    letter-spacing: 0.03em;
+    color: getColor("our-team-member-position-text");
+  }
+}

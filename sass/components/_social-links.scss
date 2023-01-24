@@ -1,0 +1,34 @@
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  &__icon {
+    display: block;
+    border-radius: 50%;
+    background-color: getColor("background");
+    fill: getColor("social-links");
+    transition-property: background-color fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link:focus > &__icon,
+  &__link:hover > &__icon {
+    background-color: getColor("primary");
+    fill: getColor("background");
+    outline: none;
+    cursor: pointer;
+  }
+
+  &--footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &__icon--color {
+    fill: getColor("background");
+    background-color: getColor("footer-social-links-bg");
+  }
+}
