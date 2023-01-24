@@ -22,10 +22,11 @@
   }
 
   &__footer-studio-color {
-    color: getColor("footer-logo");
+    color: getColor("background");
   }
 
   &--footer {
     line-height: 1.19;
+    padding-left: 0;
   }
 }
