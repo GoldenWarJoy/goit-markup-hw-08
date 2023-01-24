@@ -29,7 +29,7 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid blue;
+
   display: block;
 
   &:visited {
@@ -50,7 +50,7 @@
       height: 4px;
       left: 0px;
       top: 46px;
-      background: red;
+      background-color: getColor("primary");
       border-radius: 2px;
       @media screen and (max-width: 590px) {
         top: 18px;
@@ -62,7 +62,5 @@
   }
 }
 .nav--header {
-  border: 1px solid #2196f3;
-
   width: 100%;
 }
