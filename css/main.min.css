@@ -23,10 +23,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: auto;
+}
+
+.container--card-set {
+  width: 100%;
+  text-align: center;
 }
 
 .container--flex-start-row {
@@ -341,32 +343,26 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 10px;
-  padding: 0 auto 94px auto;
+  gap: 30px;
+  padding: 0;
   list-style: none;
 }
 .card-set__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-preferred-size: calc((100% - 90px) / 4);
-      flex-basis: calc((100% - 90px) / 4);
+  width: 270px;
+  margin: 0;
 }
 @media screen and (max-width: 1200px) {
   .card-set__item {
-    -ms-flex-preferred-size: calc((100% - 30px) / 2);
-        flex-basis: calc((100% - 30px) / 2);
+    width: 354px;
+    margin: 0;
   }
 }
 .card-set__icon {
@@ -391,12 +387,17 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  text-align: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   letter-spacing: 0.03em;
   color: #757575;
 }
 @media screen and (max-width: 1200px) {
   .card-set__text {
     width: 354px;
+    height: 65px;
   }
 }
 
@@ -414,7 +415,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 94px 0px;
+  padding: 94px 0;
   width: 100%;
   background: #2f303a;
 }
@@ -573,6 +574,12 @@ body {
   gap: 30px;
   padding: 0;
   list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .our-team__member {
   -ms-flex-preferred-size: calc((100% - 90px) / 4);
@@ -586,6 +593,14 @@ body {
 .our-team__photo {
   display: block;
   margin: 0 0 30px 0;
+  width: 270px;
+  height: 260px;
+}
+@media screen and (max-width: 768px) {
+  .our-team__photo {
+    width: 354px;
+    height: 374px;
+  }
 }
 .our-team__member-name {
   font-weight: 500;
