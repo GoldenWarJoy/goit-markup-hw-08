@@ -9,18 +9,28 @@
   list-style: none;
 
   &__item {
-    width: 270px;
+    width: 450px;
+
     margin: 0;
-    @media screen and (max-width: 1200px) {
+    @media screen and (min-width: 768px) {
+      width: 270px;
+    }
+    @media screen and (min-width: 480px) and (max-width: 768px) {
       width: 354px;
     }
   }
 
   &__icon {
-    width: 270px;
+    width: 450px;
+
     height: 120px;
-    @media screen and (max-width: 1200px) {
+
+    @media screen and (min-width: 480px) and (max-width: 768px) {
       width: 354px;
+      background-color: getColor(main-div-our-team-background);
+    }
+    @media screen and (min-width: 768px) {
+      width: 270px;
       background-color: getColor(main-div-our-team-background);
     }
   }
@@ -38,7 +48,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    @media screen and (max-width: 1200px) {
+    @media screen and (min-width: 480px) and (max-width: 768px) {
       width: 354px;
       height: 65px;
     }
