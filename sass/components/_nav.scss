@@ -7,7 +7,7 @@
 }
 
 .nav__flex-row-center {
-  display: flex;
+  display: none;
 
   flex-direction: row;
   justify-content: start;
@@ -15,11 +15,9 @@
   padding: 0 0 0 8.8%;
   margin: 0;
   width: 100%;
-  @media screen and (max-width: 590px) {
+  @media screen and (min-width: 480px) {
     & {
-      flex-direction: column;
-      gap: 10px;
-      align-items: baseline;
+      display: flex;
     }
   }
 }
@@ -53,9 +51,6 @@
       top: 46px;
       background-color: getColor("primary");
       border-radius: 2px;
-      @media screen and (max-width: 590px) {
-        top: 18px;
-      }
     }
     &:visited {
       color: getColor("primary");

@@ -133,9 +133,7 @@ body {
 }
 
 .nav__flex-row-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -148,16 +146,11 @@ body {
   margin: 0;
   width: 100%;
 }
-@media screen and (max-width: 590px) {
+@media screen and (min-width: 480px) {
   .nav__flex-row-center {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 10px;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -189,11 +182,6 @@ body {
   background-color: #2196f3;
   border-radius: 2px;
 }
-@media screen and (max-width: 590px) {
-  .nav__text--is-active::after {
-    top: 18px;
-  }
-}
 .nav__text--is-active:visited {
   color: #2196f3;
 }
@@ -216,14 +204,10 @@ body {
 }
 
 .header-mail-phone-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 30px;
+  display: none;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   padding-right: 12px;
   position: absolute;
   top: 50%;
@@ -231,16 +215,28 @@ body {
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .header-mail-phone-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 10px;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+  }
+}
+@media screen and (min-width: 840px) {
+  .header-mail-phone-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 30px;
   }
 }
 
@@ -1201,6 +1197,11 @@ body {
   outline: none;
 }
 
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
 .menu-toggle:hover,
 .menu-toggle:focus {
   background-color: rgba(0, 0, 0, 0.1);
