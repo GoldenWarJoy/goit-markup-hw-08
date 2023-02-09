@@ -3,9 +3,12 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 94px 0;
+  padding: 60px 0;
   width: 100%;
   background: getColor("section-bg");
+  @media screen and (min-width: 768px) {
+    padding: 94px 0;
+  }
 
   &__banner {
     padding: 200px 0;
@@ -23,19 +26,20 @@
     margin: 0;
     padding: 0;
     font-weight: 900;
-    width: 696px;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
+    width: 365px;
+
     /* or 136% */
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 30px;
     color: getColor("section");
-    @media screen and (max-width: 768px) {
-      font-size: 26px;
-      line-height: 1.62;
-      width: 365px;
+    @media screen and (min-width: 768px) {
+      font-size: 44px;
+      line-height: 1.36;
+      width: 696px;
     }
   }
 
@@ -54,4 +58,8 @@
   &--card-set {
     background-color: getColor("section-2-bg");
   }
+}
+
+.container--banner {
+  width: 100vw;
 }

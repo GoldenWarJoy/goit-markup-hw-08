@@ -38,15 +38,20 @@
   outline: none;
 }
 
-@media (min-width: 768px) {
+.menu-toggle__close-icon {
+  fill: getColor("primary-text");
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: getColor("primary");
+  }
+}
+@media (min-width: 700px) {
   .menu-toggle {
     display: none;
   }
-}
-
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .menu-container {
@@ -83,7 +88,7 @@
 }
 
 .mobile-menu__link {
-  display: block;
+  display: inline-block;
   padding: 0px;
   margin-bottom: 32px;
   color: getColor("primary-text");

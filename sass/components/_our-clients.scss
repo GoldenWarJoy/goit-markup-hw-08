@@ -24,7 +24,7 @@
   }
 
   &__icon {
-    width: 170px;
+    width: 210px;
     height: 92px;
     fill: getColor("social-links");
     border: 1px solid getColor("social-links");
@@ -32,9 +32,12 @@
     border-radius: 4px;
     transition-property: border-color fill;
     transition-duration: 250ms;
-    @media screen and (max-width: 768px) {
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       width: 226px;
-      height: 92px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 170px;
     }
   }
   &__link:focus > &__icon,
