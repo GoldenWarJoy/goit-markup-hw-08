@@ -77,6 +77,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  width: 100vw;
+  max-width: 1200px;
   list-style-type: none;
   padding: 0;
 }
@@ -447,9 +449,11 @@ body {
 }
 .section__banner {
   padding: 200px 0;
+  max-width: 1600px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/section-1-background.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/section-1-background.jpg);
   height: 600px;
+  width: 100vw;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -494,7 +498,7 @@ body {
 }
 
 .container--banner {
-  width: 100vw;
+  width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
