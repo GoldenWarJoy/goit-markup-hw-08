@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Wojciech Szczygieł hw3</title>
+    <title>Wojciech Szczygieł hw8</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -190,11 +191,15 @@
           <h2 class="our-team__header">Nasz zespół</h2>
           <ul class="our-team__table">
             <li class="our-team__member">
+              <picture>
+                <source srcset="images/john_doe_3_270x260.jpg" media="(min-width:1200px)">
+                <source srcset="images/john_doe_2_354x374.jpg" media="(min-width:768px)">
+                <source srcset="images/john_doe_1_450x460.jpg" >
               <img class="our-team__photo"
-               
                 alt="A white young man in a claret shirt. He has a beard and is smiling."
-                src="images/john_doe_1.jpg"
-              />
+                src="images/john_doe_1_450x460.jpg"
+                />
+            </picture>
               <p class="our-team__member-name">John Doe</p>
               <p class="our-team__member-position">Product Designer</p>
               <div class="social-links">

@@ -629,18 +629,15 @@ body {
   display: block;
   margin: 0 0 30px 0;
   width: 450px;
-  height: 460px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .our-team__photo {
     width: 354px;
-    height: 374px;
   }
 }
 @media screen and (min-width: 1200px) {
   .our-team__photo {
     width: 270px;
-    height: 260px;
   }
 }
 .our-team__member-name {
