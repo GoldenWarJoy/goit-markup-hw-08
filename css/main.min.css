@@ -448,19 +448,46 @@ body {
   }
 }
 .section__banner {
-  padding: 200px 0;
-  max-width: 1600px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/section-1-background.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/section-1-background.jpg);
-  height: 600px;
+  padding: 118px 0;
+  max-width: 480px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/banner_480x400.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner_480x400.jpg);
+  height: 400px;
   width: 100vw;
-  -o-object-fit: contain;
-     object-fit: contain;
+  background-size: contain;
+  background-position: center;
 }
-@media screen and (max-width: 768px) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .section__banner {
-    height: 400px;
-    padding: 118px 0;
+    background-image: url(../images/banner_960x800.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .section__banner {
+    background-image: url(../images/banner_768x400.jpg);
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .section__banner {
+    background-image: url(../images/banner_1536x800.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section__banner {
+    height: 600px;
+    padding: 200px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section__banner {
+    max-width: 1600px;
+    background-image: url(../images/banner_1600x600.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .section__banner {
+    background-image: url(../images/banner_3200x1200.jpg);
   }
 }
 .section__banner-text {
