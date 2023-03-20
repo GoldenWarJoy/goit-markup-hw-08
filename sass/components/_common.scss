@@ -13,7 +13,7 @@ body {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid red;
+
   width: 480px;
   justify-content: center;
   align-items: center;
@@ -31,31 +31,6 @@ body {
 .container--card-set {
   text-align: center;
 }
-
-.container--our-team {
-  // width: 100%;
-}
-
-.container--our-clients {
-  // width: 100%;
-}
-// @media screen and (max-width: 768px) {
-//   .container {
-//     background-color: red;
-//   }
-// }
-
-// @media screen and (max-width: 480px) {
-//   .container {
-//     background-color: blue;
-//   }
-// }
-
-// @media screen and (max-width: 590px) {
-//   .container {
-//     background-color: yellow;
-//   }
-// }
 
 .container--flex-start-row {
   flex-direction: column;
