@@ -6,7 +6,7 @@
   padding: 60px 0;
   margin: 0;
   background: getColor("section-bg");
-  min-width: 480px;
+  // min-width: 480px;
   @media screen and (min-width: 768px) {
     padding: 94px 0;
   }
@@ -60,7 +60,8 @@
     font-weight: 900;
     font-size: 26px;
     line-height: 1.62;
-    width: 365px;
+    max-width: 365px;
+    width: 100%;
 
     /* or 136% */
     text-align: center;
@@ -68,10 +69,11 @@
     text-transform: uppercase;
     margin-bottom: 30px;
     color: getColor("section");
-    @media screen and (min-width: 768px) {
+
+    @media screen and (min-width: 1200px) {
       font-size: 44px;
       line-height: 1.36;
-      width: 696px;
+      max-width: 696px;
     }
   }
 
